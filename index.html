@@ -48,11 +48,16 @@
     <audio id="mysound" autoplay loop>
         <source src="./sound/sound.mp3" type="audio/mpeg">
     </audio>
+
+
+    <!-- <embed id="playermp3" src="./sound/sound.mp3" type="audio/mp3" autostart="true" hidden="true" > -->
    
     <script src="index.js"></script>
     <script>
         var audio = document.getElementById("mysound");
-        audio.volume=0.2;
+        audio.volume=0.1;
+        audio.play();
+        
     </script>
 </body>
 </html>
