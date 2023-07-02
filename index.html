@@ -45,7 +45,7 @@
         </ul>
     </div>
     
-    <audio id="mysound" src="./sound/sound.mp3" autoplay loop>
+    <audio id="mysound" src="./sound/sound.mp3" autoplay loop >
     </audio>
 
 
@@ -53,10 +53,20 @@
    
     <script src="index.js"></script>
     <script>
+      
         var audio = document.getElementById("mysound");
         audio.volume=0.1;
-        audio.play();
-        audio.load();
+        div = document.querySelector('body');
+        
+        var btn= document.querySelector(".next-button");
+        btn.addEventListener("click", () =>{
+            audio.play();
+        });
+
+        div.addEventListener('mousemove', function(x) {
+            audio.play();
+        });
+
     </script>
 </body>
 </html>
